@@ -13,11 +13,21 @@
 				<h1>First Page Header</h1>
 			</div>
 			<div data-role="main" class="ui-content">
-				<a href="#secondPage">Move to second page</a><br/>
+				<h4>DialogBox</h4>
 				<a href="#firstDialog">Oppen me please</a>
-				<p>
-					Here we have msg on the first page.
-				</p>
+				<h4>Transtion to page</h4>
+				<ul>
+					<li><a href="#secondPage" data-transition="fade">fade</a></li>
+					<li><a href="#secondPage" data-transition="pop">pop</a></li>
+					<li><a href="#secondPage" data-transition="flip">flip</a></li>
+					<li><a href="#secondPage" data-transition="turn">turn</a></li>
+					<li><a href="#secondPage" data-transition="flow">flow</a></li>
+					<li><a href="#secondPage" data-transition="slidefade">slidefade</a></li>
+					<li><a href="#secondPage" data-transition="slide">slide</a></li>
+					<li><a href="#secondPage" data-transition="slideup">slideup</a></li>
+					<li><a href="#secondPage" data-transition="slidedown">slidedown</a></li>
+					<li><a href="#secondPage" data-transition="none">none</a></li>
+				</ul>
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
@@ -25,7 +35,7 @@
 		</div>
 		<div data-role="page" id="secondPage">
 			<div data-role="header">
-				<h1>Second Page Header</h1>
+				<h1>Second Page</h1>
 			</div>
 			<div data-role="main" class="ui-content">
 				<a href="#firstPage">Back</a>
@@ -39,14 +49,13 @@
 		</div>
 		<div data-role="page" data-dialog="true" id="firstDialog">
 			<div data-role="header">
-				<h1>Dialog</h1>
+				<h1>Dialog box</h1>
 			</div>
 			<div data-role="main" class="ui-content">
 				<p>
 					Wow you oppen me.
 				</p>
-				<a href="#firstPage">First</a><br/>
-				<a href="#secondPage">Second</a><br/>
+				<a href="#firstPage">Back</a><br/>
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
