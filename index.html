@@ -13,9 +13,20 @@
 				<h1>First Page Header</h1>
 			</div>
 			<div data-role="main" class="ui-content">
-				<h4>DialogBox</h4>
-				<a href="#firstDialog">Oppen me please</a>
-				<h4>Transtion to page</h4>
+				<h4>Transition to DialogBox</h4>
+				<ul>
+					<li><a href="#firstDialog" data-transition="fade">fade</a></li>
+					<li><a href="#firstDialog" data-transition="pop">pop</a></li>
+					<li><a href="#firstDialog" data-transition="flip">flip</a></li>
+					<li><a href="#firstDialog" data-transition="turn">turn</a></li>
+					<li><a href="#firstDialog" data-transition="flow">flow</a></li>
+					<li><a href="#firstDialog" data-transition="slidefade">slidefade</a></li>
+					<li><a href="#firstDialog" data-transition="slide">slide</a></li>
+					<li><a href="#firstDialog" data-transition="slideup">slideup</a></li>
+					<li><a href="#firstDialog" data-transition="slidedown">slidedown</a></li>
+					<li><a href="#firstDialog" data-transition="none">none</a></li>
+				</ul>
+				<h4>Transition to page</h4>
 				<ul>
 					<li><a href="#secondPage" data-transition="fade">fade</a></li>
 					<li><a href="#secondPage" data-transition="pop">pop</a></li>
@@ -28,6 +39,23 @@
 					<li><a href="#secondPage" data-transition="slidedown">slidedown</a></li>
 					<li><a href="#secondPage" data-transition="none">none</a></li>
 				</ul>
+				<h4>Buttons</h4>
+				<ul>
+					<li><input type="button" value="button"></li>
+					<li><button class="ui-btn">button</button></li>
+					<li><a href="#" class="ui-btn">button</a></li>
+				</ul>
+				<h4>Buttons Group</h4>
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#" class="ui-btn">button 1</a>
+					<a href="#" class="ui-btn">button 2</a>
+					<a href="#" class="ui-btn">button 3</a>
+				</div>
+				<div data-role="controlgroup" data-type="vertical">
+					<a href="#" class="ui-btn">button 1</a>
+					<a href="#" class="ui-btn">button 2</a>
+					<a href="#" class="ui-btn">button 3</a>
+				</div>
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
@@ -38,10 +66,10 @@
 				<h1>Second Page</h1>
 			</div>
 			<div data-role="main" class="ui-content">
-				<a href="#firstPage">Back</a>
 				<p>
 					Here we have msg on the second page.
 				</p>
+				<a href="#" class="ui-btn" data-rel="back">Back</a>
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
@@ -55,7 +83,7 @@
 				<p>
 					Wow you oppen me.
 				</p>
-				<a href="#firstPage">Back</a><br/>
+				<a href="#" class="ui-btn" data-rel="back">Back</a>
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
