@@ -8,13 +8,28 @@
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
-		<div data-role="page">
+		<div data-role="page" id="firstPage">
 			<div data-role="header">
 				<h1>First Page Header</h1>
 			</div>
 			<div data-role="main" class="ui-content">
+				<a href="#secondPage">Move to second page</a>
 				<p>
 					Here we have msg on the first page.
+				</p>
+			</div>
+			<div data-role="footer">
+				<h2>Just footer</h2>
+			</div>
+		</div>
+		<div data-role="page" id="secondPage">
+			<div data-role="header">
+				<h1>Second Page Header</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="#firstPage">Move to first page</a>
+				<p>
+					Here we have msg on the second page.
 				</p>
 			</div>
 			<div data-role="footer">
