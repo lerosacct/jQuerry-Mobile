@@ -129,11 +129,62 @@
 				<a href="#" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Delete</a>
 				<p>ui-alt-icon</p>
 				<a href="#" class="ui-alt-icon ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Delete</a>
+				<h4>Popups<h4>
+				<a href="#firstPopup" data-rel="popup">BasicPopup</a><br/>
+				<a href="#secondPopup" data-rel="popup">Closed only by button</a>
+				<p id="popupHere">Popap location (data-position-to):</p>
+				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="window">Window</a>
+				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="origin">Origin</a>
+				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popupHere">To pointer</a>
+				<h4>Popup transition</h4>
+				<a href="#firstPopup" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">No transition</a>
+				<a href="#firstPopup" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Pop</a>
+				<a href="#firstPopup" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Fade</a>
+				<a href="#firstPopup" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flip</a>
+				<a href="#firstPopup" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Turn</a>
+				<a href="#firstPopup" data-transition="flow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flow</a>
+				<a href="#firstPopup" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide</a>
+				<a href="#firstPopup" data-transition="slidefade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slidefade</a>
+				<a href="#firstPopup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide up</a>
+				<a href="#firstPopup" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide down</a>
+				<h4>Popup arrow<h4>
+				<a href="#" id="popHere2"class="ui-btn ui-btn-icon-gear ui-btn-icon-notext">here</a>
+				<a href="#arrowPopupLeft" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Left</a>
+				<a href="#arrowPopupRight" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Right</a>
+				<a href="#arrowPopupTop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Top</a>
+				<a href="#arrowPopupBottom" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">bottom</a>
+				
+				<div data-role="popup" id="firstPopup" class="ui-content">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="secondPopup" class="ui-content" data-dismissible="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="arrowPopupTop" class="ui-content" data-arrow="t">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="arrowPopupLeft" class="ui-content" data-arrow="l">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="arrowPopupRight" class="ui-content" data-arrow="r">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="arrowPopupBottom" class="ui-content" data-arrow="b">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
 			</div>
 		</div>
+		
 		<div data-role="page" id="secondPage">
 			<div data-role="header">
 				<h1>Second Page</h1>
@@ -148,6 +199,7 @@
 				<h2>Just footer</h2>
 			</div>
 		</div>
+		
 		<div data-role="page" data-dialog="true" id="firstDialog">
 			<div data-role="header">
 				<h1>Dialog box</h1>
