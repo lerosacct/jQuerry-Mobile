@@ -16,13 +16,13 @@
 				<h3>Page</h3>
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
-						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="slide">Transtion</a></li>
+						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="flow">Transtion</a></li>
 					</ul>
 				</div>	
 				<h3>Dialog</h3>
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
-						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="slide">Transtion</a></li>
+						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="flow">Transtion</a></li>
 					</ul>
 				</div>	
 				
@@ -338,6 +338,9 @@
 			</div>
 		</div>
 		
+		<!-- -------------------------------------------- -->
+		<!-- Here we have page that shows all transitions -->
+		<!-- -------------------------------------------- -->
 		<div data-role="page" id="transitionsPageAndDial">
 			<div data-role="header">
 				<h1>Transitions - Dialog and Page</h1>
@@ -345,35 +348,89 @@
 			</div>
 			<div data-role="main" class="ui-content">
 				<h4>Transition to DialogBox</h4>
-				<ul>
-					<li><a href="#firstDialog" data-transition="fade">fade</a></li>
-					<li><a href="#firstDialog" data-transition="pop">pop</a></li>
-					<li><a href="#firstDialog" data-transition="flip">flip</a></li>
-					<li><a href="#firstDialog" data-transition="turn">turn</a></li>
-					<li><a href="#firstDialog" data-transition="flow">flow</a></li>
-					<li><a href="#firstDialog" data-transition="slidefade">slidefade</a></li>
-					<li><a href="#firstDialog" data-transition="slide">slide</a></li>
-					<li><a href="#firstDialog" data-transition="slideup">slideup</a></li>
-					<li><a href="#firstDialog" data-transition="slidedown">slidedown</a></li>
-					<li><a href="#firstDialog" data-transition="none">none</a></li>
-				</ul>
-				<h4>Transition to page</h4>
-				<ul>
-					<li><a href="#secondPage" data-transition="fade">fade</a></li>
-					<li><a href="#secondPage" data-transition="pop">pop</a></li>
-					<li><a href="#secondPage" data-transition="flip">flip</a></li>
-					<li><a href="#secondPage" data-transition="turn">turn</a></li>
-					<li><a href="#secondPage" data-transition="flow">flow</a></li>
-					<li><a href="#secondPage" data-transition="slidefade">slidefade</a></li>
-					<li><a href="#secondPage" data-transition="slide">slide</a></li>
-					<li><a href="#secondPage" data-transition="slideup">slideup</a></li>
-					<li><a href="#secondPage" data-transition="slidedown">slidedown</a></li>
-					<li><a href="#secondPage" data-transition="none">none</a></li>
-				</ul>
+				<table data-role="table" data-mode="reflow" class="ui-responsive">
+					<thead>
+						<tr>
+							<th>Value</th>
+							<th>Dialog</th>
+							<th>Box</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>(default)</td>
+							<td><a href="#exapleDialogForTransitions" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>
+							<td>fade</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>
+							<td>pop</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>flip</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>turn</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>flow</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>slidefade</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>slide</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>slideup</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>slidedown</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+						<tr>	
+							<td>none</td>
+							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePageForTransitions" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div data-role="footer">
 				<a href="#" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Back to main page</a>
 			</div>
 		</div>
+		
+		<div data-role="page" data-dialog="true" id="exapleDialogForTransitions">
+			<div data-role="main" class="ui-content">
+				<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-b" data-rel="back">Back</a>
+			</div>
+		</div>
+		
+		<div data-role="page" id="exaplePageForTransitions">
+			<div data-role="main" class="ui-content">
+				<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-b" data-rel="back">Back</a>
+			</div>
+		</div>
+		<!-- -------------------------------------------- -->
 	</body>
 </html> 
