@@ -176,6 +176,21 @@
 					<li>data-swipe-close=false/true</li>
 					<li>close button</li>
 				</ul>
+				<h4>Display Panel</h4>
+				<a href="#secondPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Overlay</a>
+				<a href="#thirdPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Push</a>
+				<a href="#fourthPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Reveal (default)</a>
+				<h4>Panel Position</h4>
+				data-position=""
+				<ul>
+					<li>left</li>
+					<li>right</li>
+				</ul>
+				data-position-fixed=""
+				<ul>
+					<li>true</li>
+					<li>false</li>
+				</ul>
 				
 				<div data-role="popup" id="firstPopup" class="ui-content">
 				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
@@ -208,6 +223,18 @@
 			</div>
 			
 			<div data-role="panel" id="firsPanel">
+				Here is some panel.
+				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
+			</div>
+			<div data-role="panel" id="secondPanel" data-display="overlay">
+				Here is some panel.
+				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
+			</div>
+			<div data-role="panel" id="thirdPanel" data-display="push">
+				Here is some panel.
+				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
+			</div>
+			<div data-role="panel" id="fourthPanel" data-display="reveal">
 				Here is some panel.
 				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
 			</div>
