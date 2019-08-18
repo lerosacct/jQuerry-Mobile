@@ -24,14 +24,14 @@
 					<ul>
 						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="flow">Transtion</a></li>
 					</ul>
+				</div>
+				<h3>Buttons</h3>
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="#buttonsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+					</ul>
 				</div>	
 				
-				<h4>Buttons</h4>
-				<ul>
-					<li><input type="button" value="button"></li>
-					<li><button class="ui-btn">button</button></li>
-					<li><a href="#" class="ui-btn">button</a></li>
-				</ul>
 				<h4>Buttons Group</h4>
 				<div data-role="controlgroup" data-type="horizontal">
 					<a href="#" class="ui-btn">button 1</a>
@@ -135,7 +135,7 @@
 				<a href="#firstPopup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide up</a>
 				<a href="#firstPopup" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide down</a>
 				<h4>Popup arrow<h4>
-				<a href="#" id="popHere2"class="ui-btn ui-btn-icon-gear ui-btn-icon-notext">here</a>
+				<a href="#" id="popHere2"class="ui-btn ui-icon-gear ui-btn-icon-notext">here</a>
 				<a href="#arrowPopupLeft" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Left</a>
 				<a href="#arrowPopupRight" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Right</a>
 				<a href="#arrowPopupTop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Top</a>
@@ -431,6 +431,41 @@
 				<a href="#" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-b" data-rel="back">Back</a>
 			</div>
 		</div>
-		<!-- -------------------------------------------- -->
+		
+		<!-- -------------------------------------------------------------- -->
+		<!-- Here we have page that shows how to create buttons transitions -->
+		<!-- -------------------------------------------------------------- -->
+		<div data-role="page" id="buttonsGetStarted">
+			<div data-role="header">
+				<h1>Buttons get started</h1>
+				<a href="#" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" data-rel="back">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>	
+					There are 3 basic method to create a button.<br/>
+					As input:<br/>
+					<i>&lt;input type="button" value="button"&gt;</i>
+				</p>
+				<input type="button" value="button">
+				
+				<p>	
+					As button: <br/>
+					<i>&lt;button class="ui-btn"&gt;button&lt;/button&gt;</i>
+				</p>
+				<button class="ui-btn">button</button>
+				
+				<p>
+					As anchor: <br/>
+					<i>&lt;a href="#" class="ui-btn"&gt;button&lt;/a&gt;</i>
+				</p>
+				<a href="#" class="ui-btn">button</a>
+				
+			</div>
+			<div data-role="footer">
+				<a href="#" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- -------------------------------------------------------------- -->
 	</body>
 </html> 
