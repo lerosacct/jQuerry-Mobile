@@ -17,7 +17,7 @@
 		<!-- -->
 	</head>
 	<body>
-		<div data-role="page" id="firstPage">
+		<div data-role="page" id="mainPageContent">
 			<div data-role="header">
 				<h1>First Page Header</h1>
 			</div>	
@@ -55,6 +55,7 @@
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#collapseGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+						<li><a href="#iconsGetStared" data-icon="star" data-transition="flow">Use Icons</a></li>
 					</ul>
 				</div>
 				<h4>Popups<h4>
@@ -120,10 +121,6 @@
 					<li>false</li>
 				</ul>
 				<h4>Colapse</h4>
-				<div data-role="collapsible" data-collapsed="false">
-					<h4>Colpase</h4>
-					<p>Collapsed content - default open</p>
-				</div>
 				<div data-role="collapsible" data-inset="false">
 					<h4>Colpase</h4>
 					<p>Collapsed content - data-inset="false"</p>
@@ -153,10 +150,7 @@
 				<h4>Colapse as Popup</h4>
 				<a href="#collapsePopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-gear ui-btn-icon-notext">gear</a>
 				<h4>Change ico in collapse</h4>
-				<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right">
-					<h4>Colpase</h4>
-					<p>Collapsed content</p>
-				</div>		
+					
 				<h4>Tables</h4>
 				<table data-role="table" data-mode="reflow" class="ui-responsive">
 					<thead>
@@ -692,6 +686,24 @@
 					</i>
 					<input type="button" value="button" data-icon="star">
 					
+					<h5>Collapse</h5>
+					<i>
+						&lt;div data-role="collapsible" data-collapsed-icon="<b>name</b>" data-expanded-icon="<b>name</b>"&gt;<br/>
+						&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
+						&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+					&lt;div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u"&gt;<br/>
+						&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
+						&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+						<h4>Colpase</h4>
+						<p>Collapsed content</p>
+					</div>	
 				</p>
 			</div>
 			<div data-role="footer">
