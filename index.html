@@ -48,6 +48,7 @@
 					<ul>
 						<li><a href="#iconsGetStared" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#iconsParameters" data-icon="gear" data-transition="flow">Parameters</a></li>
+						<li><a href="#iconsPositioning" data-icon="location" data-transition="flow">Positioning</a></li>
 						<li><a href="#iconsList" data-icon="star" data-transition="flow">List</a></li>
 					</ul>
 				</div>
@@ -711,6 +712,78 @@
 			</div>
 		</div>
 		
+		<!-- ---------------------------------------------------------------- -->
+		<!-- Here we have page that basic information about positioning icons -->
+		<!-- ---------------------------------------------------------------- -->
+		<div data-role="page" id="iconsPositioning">
+			<div data-role="header">
+				<h1>Icon positioning</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext ui-btn-b">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					There are basically four possible positions of icon:
+					<ul data-role="listview" data-inset="true">
+						<li>Left</li>
+						<li>Top</li>
+						<li>Right</li>
+						<li>Bottom</li>
+					</ul>
+					<h5>Button as anchor</h5>
+					<i>
+						&lt;a href="#" class="ui-btn ui-icon-star ui-btn-icon-<b>position</b>"&gt;button&lt;/a&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+						&lt;a href="#" class="ui-btn ui-icon-star ui-btn-icon-top"&gt;button&lt;/a&gt;
+					</i>
+					<a href="#" class="ui-btn ui-icon-star ui-btn-icon-top">button</a>
+					
+					<h5>Button as HTML tag</h5>
+					<i>
+						&lt;button class="ui-btn ui-icon-star ui-btn-icon-<b>position</b>"&gt;button&lt;/button&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+						&lt;button class="ui-btn ui-icon-star ui-btn-icon-top"&gt;button&lt;/button&gt;
+					</i>
+					<button class="ui-btn ui-icon-star ui-btn-icon-top">button</button>
+					
+					<h5>Button as INPUT tag</h5>
+					<i>
+						&lt;input type="button" value="button" data-icon="star" data-iconpos="<b>position</b>"&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+						&lt;input type="button" value="button" data-icon="star" data-iconpos="top"&gt;
+					</i>
+					<input type="button" value="button" data-icon="star" data-iconpos="top">
+					
+					<h5>Collapse</h5>
+					<i>
+						&lt;div data-role="collapsible" data-iconpos="<b>position</b>"&gt;<br/>
+						&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
+						&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+					&lt;div data-role="collapsible" data-iconpos="top"&gt;<br/>
+						&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
+						&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<div data-role="collapsible" data-iconpos="top">
+						<h4>Colpase</h4>
+						<p>Collapsed content</p>
+					</div>	
+				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
 		<!-- ------------------------------------------------------------- -->
 		<!-- Here we have page that shows how to use parameters with icons -->
 		<!-- ------------------------------------------------------------- -->
@@ -765,8 +838,8 @@
 			</div>
 			<div data-role="main" class="ui-content">
 				<p>
-					Collapse is an part of aplication that allow to save some space in content.<br/>
-					<h5>Default oppen</h5>
+					Collapse is an part of application  that allow to save some space in content.<br/>
+					<h5>Default closed</h5>
 					<i>
 					&lt;div data-role="collapsible"&gt;<br/>
 					&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
@@ -779,7 +852,7 @@
 					<p>Collapsed content</p>
 				</div>
 				<p>
-					<h5>Default closed</h5>
+					<h5>Default opened</h5>
 					<i>
 					&lt;div data-role="collapsible" data-collapsed="false"&gt;<br/>
 					&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
