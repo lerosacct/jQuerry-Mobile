@@ -56,6 +56,7 @@
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#collapseGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+						<li><a href="#collapseGropus" data-icon="grid" data-transition="flow">Groups</a></li>
 						<li><a href="#collapseParameters" data-icon="gear" data-transition="flow">Parameters</a></li>
 						<li><a href="#iconsGetStared" data-icon="star" data-transition="flow">Use Icons</a></li>
 					</ul>
@@ -130,17 +131,6 @@
 					<li>false</li>
 				</ul>
 				<h4>Colapse</h4>
-				<h4>Colappse groups</h4>
-				<div data-role="collapsibleset">
-					<div data-role="collapsible">
-						<h4>Colpase</h4>
-						<p>Collapsed content</p>
-					</div>
-					<div data-role="collapsible">
-						<h4>Colpase</h4>
-						<p>Collapsed content</p>
-					</div>
-				</div>
 				<h4>Colapse as Popup</h4>
 				<a href="#collapsePopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-gear ui-btn-icon-notext">gear</a>
 				<h4>Change ico in collapse</h4>
@@ -956,6 +946,7 @@
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
 			</div>
 		</div>
+		
 		<!-- --------------------------------------------------------------- -->
 		<!-- Here we have page that shows how to use parametrs with collapse -->
 		<!-- --------------------------------------------------------------- -->
@@ -966,7 +957,7 @@
 			</div>
 			<div data-role="main" class="ui-content">
 				<p>
-					Collapse also can be modified using some parameters. You can get full with collapse, or collapse html without "fancy" border..
+					Collapse also can be modified using some parameters. You can get full with collapse, or collapse html without "fancy" border.
 					<h5>Full width</h5>
 					&lt;div data-role="collapsible" data-inset="false"&gt;</br>
 					&ensp;&ensp;&ensp;&ensp;&lt;h4&gtColpase&lt;/h4&gt;</br>
@@ -998,6 +989,44 @@
 			</div>
 		</div>
 		
-		<!-- -------------------------------------------------------------- -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- Here we have page that shows how to use parametrs with collapse -->
+		<!-- --------------------------------------------------------------- -->
+		<div data-role="page" id="collapseGropus">
+			<div data-role="header">
+				<h1>Collapse groups</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					Collapsed element also can be organized in groups.
+					<h5>Group</h5>
+					&lt;div data-role="collapsibleset"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="collapsible"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;h4&gt;Colpase&lt;/h4&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;/div&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="collapsible"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;h4&gt;Colpase&lt;/h4&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;/div&gt;<br/>
+					&lt;/div&gt;<br/>
+				</p>
+				<div data-role="collapsibleset">
+					<div data-role="collapsible">
+						<h4>Colpase</h4>
+						<p>Collapsed content</p>
+					</div>
+					<div data-role="collapsible">
+						<h4>Colpase</h4>
+						<p>Collapsed content</p>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+				
 	</body>
 </html> 
