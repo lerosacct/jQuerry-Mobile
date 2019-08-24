@@ -66,8 +66,10 @@
 					<ul>
 						<li><a href="#gridGetStared" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#gridResponsive" data-icon="action" data-transition="flow">Responsive</a></li>
+						<li><a href="#gridNavbar" data-icon="bars" data-transition="flow">Navbar</a></li>
 					</ul>
 				</div>
+				
 				<h4>Popups<h4>
 				<a href="#firstPopup" data-rel="popup">BasicPopup</a><br/>
 				<a href="#secondPopup" data-rel="popup">Closed only by button</a>
@@ -99,14 +101,6 @@
 					<li>fixed</li>
 				</ul>
 				data-fullscreen="true"
-				<h4>Navbars</h4>
-				<div data-role="navbar" data-iconpos="left">
-					<ul>
-						<li><a href="#"  class="ui-btn-active ui-state-persist" data-icon="home">This</a></li>
-						<li><a href="#" data-icon="grid">is</a></li>
-						<li><a href="#" data-icon="search">navbar</a></li>
-					</ul>
-				</div>
 				<h4>Panels</h4>
 				<a href="#firsPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Oppen</a>
 				<h4>Closing Panels</h4>
@@ -806,7 +800,7 @@
 					</i>
 					example:<br/>
 					<i>
-					&lt;div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u"&gt;<br/>
+						&lt;div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u"&gt;<br/>
 						&ensp;&ensp;&ensp;&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
 						&ensp;&ensp;&ensp;&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
 						&lt;/div&gt;<br/>
@@ -815,6 +809,33 @@
 						<h4>Colpase</h4>
 						<p>Collapsed content</p>
 					</div>	
+					
+					<h5>Navbar</h5>
+					<i>
+						&lt;div data-role="navbar"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="<b>name</b>">Menu item&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;...<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+						&lt;div data-role="navbar"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="home"&gt;home&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;grid&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="search"&gt;search&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>				
+					<div data-role="navbar" data-iconpos="left">
+						<ul>
+							<li><a href="#" data-icon="home">home</a></li>
+							<li><a href="#" data-icon="grid">grid</a></li>
+							<li><a href="#" data-icon="search">search</a></li>
+						</ul>
+					</div>
 				</p>
 			</div>
 			<div data-role="footer">
@@ -878,15 +899,41 @@
 					</i>
 					example:<br/>
 					<i>
-					&lt;div data-role="collapsible" data-iconpos="top"&gt;<br/>
+						lt;div data-role="collapsible" data-iconpos="top"&gt;<br/>
 						&ensp;&lt;h4&gt;Collapase&lt;/h4&gt;<br/>
 						&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
-					&lt;/div&gt;<br/>
+						&lt;/div&gt;<br/>
 					</i>
 					<div data-role="collapsible" data-iconpos="top">
 						<h4>Colpase</h4>
 						<p>Collapsed content</p>
 					</div>	
+					<h5>Navbar</h5>
+					<i>
+						&lt;div data-role="navbar data-iconpos="<b>name</b>"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="name">Menu item&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;...<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					example:<br/>
+					<i>
+						&lt;div data-role="navbar" data-iconpos="top"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="home"&gt;home&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;grid&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" data-icon="search"&gt;search&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>				
+					<div data-role="navbar" data-iconpos="top">
+						<ul>
+							<li><a href="#" data-icon="home">home</a></li>
+							<li><a href="#" data-icon="grid">grid</a></li>
+							<li><a href="#" data-icon="search">search</a></li>
+						</ul>
+					</div>
 				</p>
 			</div>
 			<div data-role="footer">
@@ -1181,6 +1228,7 @@
 				<p>
 					Collapsed element also can be organized in groups.
 					<h5>Group</h5>
+					<i>
 					&lt;div data-role="collapsibleset"&gt;<br/>
 					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="collapsible"&gt;<br/>
 					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;h4&gt;Colpase&lt;/h4&gt;<br/>
@@ -1191,6 +1239,7 @@
 					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;p&gt;Collapsed content&lt;/p&gt;<br/>
 					&ensp;&ensp;&ensp;&ensp;&lt;/div&gt;<br/>
 					&lt;/div&gt;<br/>
+					</i>
 				</p>
 				<div data-role="collapsibleset">
 					<div data-role="collapsible">
@@ -1207,5 +1256,66 @@
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
 			</div>
 		</div>
+		
+		<!-- --------------------------------------------------------------- -->
+		<!-- Here we have page that shows how to an navigation bars -->
+		<!-- --------------------------------------------------------------- -->
+		<div data-role="page" id="gridNavbar">
+			<div data-role="header">
+				<h1>Navbar</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					Navigation bars are inherit part of any web or mobile application.<br/>
+					jQuery mobile goes out with ready solution.
+					<h6>Standard navbar</h6>
+					<i>
+						&lt;div data-role="navbar"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;This&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;is&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;navbar&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+				</p>
+				<div data-role="navbar" data-iconpos="left">
+					<ul>
+						<li><a href="#" data-icon="home">This</a></li>
+						<li><a href="#" data-icon="grid">is</a></li>
+						<li><a href="#" data-icon="search">navbar</a></li>
+					</ul>
+				</div>
+				<p>
+					<h6>With element already active</h6>
+					<i>
+						&lt;div data-role="navbar"&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;ul&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#" <b>class="ui-btn-active ui-state-persist"</b>&gt;This&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;is&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;navbar&lt;/a&gt;&lt;/li&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;&lt;/ul&gt;<br/>
+						&lt;/div&gt;<br/>
+					</i>
+				</p>
+				<div data-role="navbar" data-iconpos="left">
+					<ul>
+						<li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home">This</a></li>
+						<li><a href="#" data-icon="grid">is</a></li>
+						<li><a href="#" data-icon="search">navbar</a></li>
+					</ul>
+				</div>
+				<p>
+					<h6>Use icno</h6>
+					You can also use icons in the nav bar, for more information see icons part.
+				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- --------------------------------------------------------------- -->
 	</body>
 </html> 
