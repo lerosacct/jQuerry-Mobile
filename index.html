@@ -238,9 +238,8 @@
 				<form class="ui-filterable">
 					<input id="newFilter" data-type="search">
 				</form>
-				
 				<ul data-role="listview" data-filter="true" data-input="#newFilter">
-					<li>Stack4</li>
+					<li data-filtertext="four">Stack4</li>
 					<li>Item1</li>
 					<li>Item2</li>
 					<li>Item3</li>
@@ -248,6 +247,43 @@
 					<li>Stack2</li>
 					<li>Stack3</li>
 				</ul>
+				<h6>Filters tables</h6>
+				<form class="ui-filterable">
+					<input id="newFilter2" data-type="search" placeholder="Search for movie">
+				</form>
+				<table data-role="table" data-mode="reflow" data-filter="true" data-input="#newFilter2" class="ui-responsive">
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Movie Title</th>
+							<th>Year</th>
+							<th>Reviews</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>fgh</td>
+							<td>1457</td>
+							<td>1467</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>vbn</td>
+							<td>1456</td>
+							<td>1551515</td>
+						</tr>
+					</tbody>
+				</table>
+				<h6>Filters html</h6>
+				<form class="ui-filterable">
+					<input id="newFilter3" data-type="search" placeholder="Search for movie">
+				</form>
+				<div class="elements" data-filter="true" data-input="#newFilter3">
+					<p>Some text 1</p>
+					<p>Some more text 2</p>
+					<p>Less text </p>
+				</div>
 				
 				<div data-role="popup" id="collapsePopup" class="ui-content">
 				    <h4>Chose opption</h4>
