@@ -84,6 +84,7 @@
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#panelsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+						<li><a href="#panelsClose" data-icon="delete" data-transition="flow">Closing</a></li>
 					</ul>
 				</div>
 				
@@ -119,12 +120,6 @@
 				</ul>
 				data-fullscreen="true"
 				<h4>Panels</h4>
-				<h4>Closing Panels</h4>
-				<ul>
-					<li>data-dismissible=true/false</li>
-					<li>data-swipe-close=false/true</li>
-					<li>close button</li>
-				</ul>
 				<h4>Display Panel</h4>
 				<a href="#secondPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Overlay</a>
 				<a href="#thirdPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Push</a>
@@ -1554,6 +1549,73 @@
 			<div data-role="panel" id="examplePanelGetStarted">
 				Here is some panel content.
 			</div>
+		</div>
+		
+		<!-- ------------------------------------------------------------ -->
+		<!-- Here we have page that shows difrent methods to close panels -->
+		<!-- ------------------------------------------------------------ -->
+		<div data-role="page" id="panelsClose">
+			<div data-role="header">
+				<h1>Panels Closing</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				Closing panels can be indicated by three different methods.<br/>
+				Data dismiss ( [ default true ]click outside a panel)<br/>
+				Swipe close ( [ default false ] used on touch screens)<br/>
+				Button or linkg with close releation<br/><br/>
+				
+				Also you can have opened only one panel at a time, of when you open second panel first one is automatically closed.<br/><br/>
+				
+				<h6>data-dismissible=true/false</h6>
+				<i>
+					&lt;div data-role="panel" id="panelID" <b>data-dismissible="false"</b>&gt;<br/>
+						Panel content<br/>
+						In this case remeber to run any oher method allow closing an panel.<br/>
+						&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				
+				<a href="#examplePanelClosingDissmisable" class="ui-btn ui-shadow">Dissmisable OFF</a><br/>
+				<h6>data-swipe-close=false/true</h6>
+				<i>
+					&lt;div data-role="panel" id="panelID" data-dismissible="false" <b>data-swipe-close="true"</b>&gt;<br/>
+						Panel content<br/>
+						In this case remeber to run any oher method allow closing an panel.<br/>
+						&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				
+				<a href="#examplePanelClosingSwipe" class="ui-btn ui-shadow">Swipe ON</a><br/>
+				<h6>Close button</h6>
+				<i>
+					&lt;div data-role="panel" id="panelID" data-dismissible="false"&gt;<br/>
+						Panel content<br/>
+						In this case remeber to run any oher method allow closing an panel.<br/>
+						<b>&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;</b><br/>
+					&lt;/div&gt;<br/>
+				</i>
+				
+				<a href="#examplePanelClosingButton" class="ui-btn ui-shadow">Only button</a><br/>
+				
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+			
+			<div data-role="panel" id="examplePanelClosingDissmisable" data-dismissible="false">
+				In this case remeber to run any oher method allow closing an panel.
+				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
+			</div>
+			<div data-role="panel" id="examplePanelClosingSwipe" data-dismissible="false" data-swipe-close="true">
+				This panel can be closed by swipe or button.
+				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
+			</div>
+			<div data-role="panel" id="examplePanelClosingButton" data-dismissible="false">
+				This content can be only closed by button.
+				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
+			</div>
+			
 		</div>
 		
 		<!-- --------------------------------------------------- -->
