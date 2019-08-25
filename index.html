@@ -11,13 +11,15 @@
 		<!-- -->
 		
 		<!-- UNCOMENT IF WANT TO USE LOCAL FILES -->
+		<link rel="stylesheet" href="vendor/css/BootMix.min.css" />
+		<link rel="stylesheet" href="vendor/css/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="vendor/css/jquery.mobile-1.4.5.min.css" />
 		<script src="vendor/js/jquery-1.11.1.min.js"></script>
 		<script src="vendor/js/jquery.mobile-1.4.5.min.js"></script>
 		<!-- -->
 	</head>
 	<body>
-		<div data-role="page" id="mainPageContent">
+		<div data-role="page" id="mainPageContent" data-theme="warning">
 			<div data-role="header">
 				<h1>First Page Header</h1>
 			</div>	
@@ -67,6 +69,12 @@
 						<li><a href="#gridGetStared" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#gridResponsive" data-icon="action" data-transition="flow">Responsive</a></li>
 						<li><a href="#gridNavbar" data-icon="bars" data-transition="flow">Navbar</a></li>
+					</ul>
+				</div>
+				<h3>Lists</h3>
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="#listsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 					</ul>
 				</div>
 				
@@ -130,7 +138,7 @@
 				<h4>Change ico in collapse</h4>
 					
 				<h4>Tables</h4>
-				<table data-role="table" data-mode="reflow" class="ui-responsive">
+				<table data-role="table" data-mode="reflow" class="ui-responsive table-stripe">
 					<thead>
 						<tr>
 							<th>Rank</th>
@@ -155,7 +163,7 @@
 					</tbody>
 				</table>
 				<h4>Colum toggle table</h4>
-				<table data-role="table" data-mode="columntoggle" data-mode="reflow" class="ui-responsive">
+				<table data-role="table" data-mode="columntoggle" data-mode="reflow" class="ui-responsive table-stroke">
 					<thead>
 						<tr>
 							<th data-priority="1">Rank</th>
@@ -180,20 +188,6 @@
 					</tbody>
 				</table>
 				<h4>Lists</h4>
-				<h6>Ordered</h6>
-				<ol data-role="listview">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li><a href="#">Item 3</a></li>
-					<li><a href="#">Item 4</a></li>
-				</ol>
-				<h6>Unordered</h6>
-				<ul data-role="listview">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li><a href="#">Item 3</a></li>
-					<li><a href="#">Item 4</a></li>
-				</ul>
 				<h6>Bordered</h6>
 				<ul data-role="listview" data-inset="true">
 					<li>Item 1</li>
@@ -381,7 +375,6 @@
 					<label for="flip-checkbox-3">Flip toggle switch checkbox:</label>
 					<input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="Assured" data-off-text="Uncertain" data-wrapper-class="custom-size-flipswitch">
 				</form>
-				<button class="hide-page-loading-msg" data-inline="true" data-icon="delete">Hide</button>
 				
 				<div data-role="popup" id="collapsePopup" class="ui-content">
 				    <h4>Chose opption</h4>
@@ -1257,9 +1250,9 @@
 			</div>
 		</div>
 		
-		<!-- --------------------------------------------------------------- -->
+		<!-- ------------------------------------------------------ -->
 		<!-- Here we have page that shows how to an navigation bars -->
-		<!-- --------------------------------------------------------------- -->
+		<!-- ------------------------------------------------------ -->
 		<div data-role="page" id="gridNavbar">
 			<div data-role="header">
 				<h1>Navbar</h1>
@@ -1310,6 +1303,47 @@
 					<h6>Use icno</h6>
 					You can also use icons in the nav bar, for more information see icons part.
 				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- --------------------------------------------------------------------- -->
+		<!-- Here we have page that shows how use an ordered, and unordered lists  -->
+		<!-- --------------------------------------------------------------------- -->
+		<div data-role="page" id="listsGetStarted">
+			<div data-role="header">
+				<h1>Lists Get Started</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					Using jQuery mobile you can in display and organize data in lists.<br/>
+					In both types lists (ordered, and unordered) you are able to use anchor as indicator for icon, and active buttons in list.
+				</p>
+				<h6>Ordered</h6>
+				<i>
+					&lt;ol <b>data-role="listview"</b>&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item without anchor&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Item with anchor&lt;/a&gt;&lt;/li&gt;<br/>
+					&lt;/ol&gt;<br/>
+				</i><br/>
+				<ol data-role="listview">
+					<li>Item without anchor</li>
+					<li><a href="#">Item with anchor</a></li>
+				</ol>
+				<h6>Unordered</h6>
+				<i>
+					&lt;ol <b>data-role="listview"</b>&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item without anchor&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Item with anchor&lt;/a&gt;&lt;/li&gt;<br/>
+					&lt;/ol&gt;<br/>
+				</i><br/>
+				<ul data-role="listview">
+					<li>Item without anchor</li>
+					<li><a href="#">Item with anchor</a></li>
+				</ul></br>
 			</div>
 			<div data-role="footer">
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
