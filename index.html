@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="vendor/css/BootMix.min.css" />
 		<link rel="stylesheet" href="vendor/css/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="vendor/css/jquery.mobile-1.4.5.min.css" />
-		<script src="vendor/js/jquery-1.11.1.min.js"></script>
+		<script src="vendor/js/jquery-1.11.1.min.js"></script> 
 		<script src="vendor/js/jquery.mobile-1.4.5.min.js"></script>
 		<!-- -->
 	</head>
@@ -75,6 +75,8 @@
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#listsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+						<li><a href="#listsDividers" data-icon="tag" data-transition="flow">Dividers</a></li>
+						<li><a href="#listBoubles" data-icon="alert" data-transition="flow">Boubbles</a></li>
 					</ul>
 				</div>
 				
@@ -188,28 +190,6 @@
 					</tbody>
 				</table>
 				<h4>Lists</h4>
-				<h6>Bordered</h6>
-				<ul data-role="listview" data-inset="true">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li><a href="#">Item 3</a></li>
-					<li><a href="#">Item 4</a></li>
-				</ul>
-				<h6>Listdevider</h6>
-				<ul data-role="listview" data-inset="true">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li data-role ="list-divider">Ddivide</li>
-					<li><a href="#">Item 3</a></li>
-					<li><a href="#">Item 4</a></li>
-				</ul>
-				<h6>Autodivide</h6>
-				<ul data-role="listview" data-autodividers="true" data-inset="true">
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Stock 1</li>
-					<li>Stock 2</li>
-				</ul>
 				<h6>Icons in list</h6>
 				<ul data-role="listview" data-inset="true">
 					<li data-icon="delete"> <a href="#">Icon</a></li>
@@ -217,11 +197,6 @@
 					<li><a href="#"><img src="vendor/test.png" alt="a" class="ui-li-icon">Custom</a></li>
 					<li data-icon="delete"> <a href="#">Separated</a><a href="#" data-icon="gear">Gear</a></li>
 				</ul>				
-				<h6>Boubble</h6>
-				<ul data-role="listview" data-autodividers="true" data-inset="true">
-					<li><a href="#">Item 1<span class="ui-li-count">123</span></a></li>
-					<li>Item3<span class="ui-li-count">789</span></li>
-				</ul>
 				<h6>Filters</h6>
 				<form class="ui-filterable">
 					<input id="newFilter" data-type="search">
@@ -375,6 +350,18 @@
 					<label for="flip-checkbox-3">Flip toggle switch checkbox:</label>
 					<input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="Assured" data-off-text="Uncertain" data-wrapper-class="custom-size-flipswitch">
 				</form>
+				<h4>Filters reveal</h4>
+				<form>
+					<input data-type="search" id="searchFilterReveal">
+				</form>
+				<ul data-role="listview" data-filter="true" data-input="#searchFilterReveal" data-filter-reveal="true" data-filter-placeholder="Search fruits..." data-inset="true">
+					<li><a href="#">Apple</a></li>
+					<li><a href="#">Banana</a></li>
+					<li><a href="#">Cherry</a></li>
+					<li><a href="#">Cranberry</a></li>
+					<li><a href="#">Grape</a></li>
+					<li><a href="#">Orange</a></li>
+				</ul>
 				
 				<div data-role="popup" id="collapsePopup" class="ui-content">
 				    <h4>Chose opption</h4>
@@ -1343,13 +1330,103 @@
 				<ul data-role="listview">
 					<li>Item without anchor</li>
 					<li><a href="#">Item with anchor</a></li>
+				</ul>
+				<h6>Bordered</h6>
+				<p>
+					By default list fill full width. If you want kinda bordered list use data-inset="true".
+				</p>
+				<i>
+					&lt;ol data-role="listview" <b>data-inset="true"</b>&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item without anchor&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Item with anchor&lt;/a&gt;&lt;/li&gt;<br/>
+					&lt;/ol&gt;<br/>
+				</i>
+				<ul data-role="listview" data-inset="true">
+					<li>Item without anchor</li>
+					<li><a href="#">Item with anchor</a></li>
 				</ul></br>
 			</div>
 			<div data-role="footer">
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
 			</div>
 		</div>
+		<!-- ------------------------------------------------------- -->
+		<!-- Here we have page that shows how use dividers on lists  -->
+		<!-- ------------------------------------------------------- -->
+		<div data-role="page" id="listBoubles">
+			<div data-role="header">
+				<h1>Lists boubbles</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					If you need give some additional medical information to your list, you can do it in fancy way using bubble.
+					<i>
+						&lt;ul data-role="listview"&gt;
+						&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;span class="ui-li-count"&gt;123&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item3&lt;span class="ui-li-count"&gt;789&lt;/span&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					</i>
+				</p>
+				<ul data-role="listview">
+					<li><a href="#">Item 1<span class="ui-li-count">123</span></a></li>
+					<li>Item3<span class="ui-li-count">789</span></li>
+				</ul>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
 		
-		<!-- --------------------------------------------------------------- -->
+		<!-- ------------------------------------------------------- -->
+		<!-- Here we have page that shows how use dividers on lists  -->
+		<!-- ------------------------------------------------------- -->
+		<div data-role="page" id="listsDividers">
+			<div data-role="header">
+				<h1>Lists Get Started</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					jquery Mobile give you basically three method to divide and lists to parts.</br>
+					First one, and default to not divide a list.</br>
+					Second one is manual divider.</br>
+					And last one is auto divider.</br>
+				</p>
+				<h6>Manual divider</h6>
+				<i>
+					&lt;ul data-role="listview"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item 1&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li <b>data-role="list-divider"</b>&gt;Ddivide&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item 2&lt;/li&gt;<br/>
+					&lt;/ul&gt;<br/>
+				</i><br/>
+				<ul data-role="listview">
+					<li>Item 1</li>
+					<li data-role="list-divider">Ddivide</li>
+					<li>Item 2</li>
+				</ul>
+				<h6>Auto divide</h6>
+				<i>
+					&lt;ul data-role="listview" <b>data-autodividers="true"</b>&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item 1&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Item 2&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Stock 1&lt;/li&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Stock 2&lt;/li&gt;<br/>
+					&lt;/ul&gt;<br/>
+				<i><br/>
+				<ul data-role="listview" data-autodividers="true">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Stock 1</li>
+					<li>Stock 2</li>
+				</ul><br/>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- ------------------------------------------------------- -->
 	</body>
 </html> 
