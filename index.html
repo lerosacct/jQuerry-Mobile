@@ -76,7 +76,8 @@
 					<ul>
 						<li><a href="#listsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#listsDividers" data-icon="tag" data-transition="flow">Dividers</a></li>
-						<li><a href="#listBoubles" data-icon="alert" data-transition="flow">Boubbles</a></li>
+						<li><a href="#listsBoubles" data-icon="alert" data-transition="flow">Boubbles</a></li>
+						<li><a href="#listsIcons" data-icon="star" data-transition="flow">Use Icons</a></li>
 					</ul>
 				</div>
 				
@@ -188,15 +189,7 @@
 							<td>ygv</td>
 						</tr>
 					</tbody>
-				</table>
-				<h4>Lists</h4>
-				<h6>Icons in list</h6>
-				<ul data-role="listview" data-inset="true">
-					<li data-icon="delete"> <a href="#">Icon</a></li>
-					<li data-icon="false"> <a href="#">No icon</a></li>
-					<li><a href="#"><img src="vendor/test.png" alt="a" class="ui-li-icon">Custom</a></li>
-					<li data-icon="delete"> <a href="#">Separated</a><a href="#" data-icon="gear">Gear</a></li>
-				</ul>				
+				</table>			
 				<h6>Filters</h6>
 				<form class="ui-filterable">
 					<input id="newFilter" data-type="search">
@@ -1353,7 +1346,7 @@
 		<!-- ------------------------------------------------------- -->
 		<!-- Here we have page that shows how use dividers on lists  -->
 		<!-- ------------------------------------------------------- -->
-		<div data-role="page" id="listBoubles">
+		<div data-role="page" id="listsBoubles">
 			<div data-role="header">
 				<h1>Lists boubbles</h1>
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
@@ -1414,7 +1407,7 @@
 					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Stock 1&lt;/li&gt;<br/>
 					&ensp;&ensp;&ensp;&ensp;&lt;li&gt;Stock 2&lt;/li&gt;<br/>
 					&lt;/ul&gt;<br/>
-				<i><br/>
+				</i><br/>
 				<ul data-role="listview" data-autodividers="true">
 					<li>Item 1</li>
 					<li>Item 2</li>
@@ -1427,6 +1420,104 @@
 			</div>
 		</div>
 		
-		<!-- ------------------------------------------------------- -->
+		<!-- --------------------------------------------------- -->
+		<!-- Here we have page that shows how use icons on lists -->
+		<!-- --------------------------------------------------- -->
+		<div data-role="page" id="listsIcons">
+			<div data-role="header">
+				<h1>Lists use icons</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					On the list element there is multiple options to use icons.<br/>
+					By default all icons are visible, you can also turn them off, or set as separate buttons.<br/>
+					Last option is use custom image, as icon, or thumbnail.<br/>
+				</p>
+				<p>
+					<h6>Default</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Icon&lt;/a&gt;&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li><a href="#">Icon</a></li>
+					</ul><br/>
+				</p>
+				<p>
+					<h6>Changed icon</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li <b>data-icon="delete"</b>&gt;&lt;a href="#"&gt;Icon&lt;/a&gt;&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li data-icon="delete"><a href="#">Icon</a></li>
+					</ul><br/>
+				</p>
+				<p>
+					<h6>No icon</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li <b>data-icon="false"</b>&gt;&lt;a href="#"&gt;Icon&lt;/a&gt;&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li data-icon="false"><a href="#">Icon</a></li>
+					</ul><br/>
+				</p>
+				<p>
+					<h6>Separated button icon</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li&gt;&lt;a href="#"&gt;Separated&lt;/a&gt;<b>&lt;a href="#" data-icon="gear"&gt;Gear&lt;/a&gt;</b>&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li><a href="#">Separated</a><a href="#" data-icon="gear">Gear</a></li>
+					</ul><br/>
+				</p>
+				<p>
+					<h6>Custom icon</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li <b>data-icon="false"</b>&gt;&lt;a href="#"&gt;<b>&lt;img src="vendor/img/sample.jpg" alt="Alternative text" class="ui-li-icon"&gt;</b>Custom&lt;/a&gt;&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li data-icon="false"><a href="#"><img src="vendor/img/sample.jpg" alt="a" class="ui-li-icon">Custom</a></li>
+					</ul><br/>
+				</p>
+				<p>
+					<h6>Thumbnail</h6>
+					<p>
+						<i>
+							&lt;ul data-role="listview"&gt;<br/>
+							&ensp;&ensp;&ensp;&ensp;&lt;li <b>data-icon="false"</b>&gt;&lt;a href="#"&gt;<b>&lt;img src="vendor/img/sample.jpg" alt="Alternative text"&gt;</b>Custom&lt;/a&gt;&lt;/li&gt;<br/>
+							&lt;/ul&gt;<br/>
+						</i>
+					</p><br/>
+					<ul data-role="listview">
+						<li data-icon="false"><a href="#"><img src="vendor/img/sample.jpg" alt="a">Thumbnail</a></li>
+					</ul><br/>
+				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- --------------------------------------------------- -->
 	</body>
 </html> 
