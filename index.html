@@ -80,6 +80,12 @@
 						<li><a href="#listsIcons" data-icon="star" data-transition="flow">Use Icons</a></li>
 					</ul>
 				</div>
+				<h3>Panels</h3>
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="#panelsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+					</ul>
+				</div>
 				
 				<h4>Popups<h4>
 				<a href="#firstPopup" data-rel="popup">BasicPopup</a><br/>
@@ -113,7 +119,6 @@
 				</ul>
 				data-fullscreen="true"
 				<h4>Panels</h4>
-				<a href="#firsPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Oppen</a>
 				<h4>Closing Panels</h4>
 				<ul>
 					<li>data-dismissible=true/false</li>
@@ -400,10 +405,6 @@
 				<h2>Just footer</h2>
 			</div>
 			
-			<div data-role="panel" id="firsPanel">
-				Here is some panel.
-				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
-			</div>
 			<div data-role="panel" id="secondPanel" data-display="overlay">
 				Here is some panel.
 				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
@@ -1515,6 +1516,43 @@
 			</div>
 			<div data-role="footer">
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- ------------------------------------------- -->
+		<!-- Here we have page that shows how use panels -->
+		<!-- ------------------------------------------- -->
+		<div data-role="page" id="panelsGetStarted">
+			<div data-role="header">
+				<h1>Panels Get Started</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				A panel must be a sibling to the header, content and footer elements inside a jQuery Mobile page. <br/>
+				You can add the panel markup either before or after these elements, but not in between.<br/>
+				A panel cannot be placed outside a page.<br/>
+				By default panel is closing after clicking outside of panel.<br/>
+			
+				<a href="#examplePanelGetStarted" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Oppen example panel</a><br/>
+				
+				<i>
+					&lt;div data-role="page" id="someID"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="header"&gt;Header content&lt;/div&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="main"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Page content, and button to oppen panel.&lt;br/&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&lt;a <b>href="#panelID"</b> class="ui-btn"&gt;Oppen example panel&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;/div&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;div data-role="footer"&gt;footer content&lt;/div&gt;<br/>
+					<b>&ensp;&ensp;&ensp;&ensp;&lt;div data-role="panel" id="panelID"&gt;Here is some panel content.&lt;/div&gt;</b><br/>
+					&lt;/div&gt;
+				</i>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+			
+			<div data-role="panel" id="examplePanelGetStarted">
+				Here is some panel content.
 			</div>
 		</div>
 		
