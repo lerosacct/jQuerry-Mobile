@@ -85,6 +85,7 @@
 					<ul>
 						<li><a href="#panelsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#panelsClose" data-icon="delete" data-transition="flow">Closing</a></li>
+						<li><a href="#panelsDisplay" data-icon="video" data-transition="flow">Display</a></li>
 					</ul>
 				</div>
 				
@@ -120,10 +121,6 @@
 				</ul>
 				data-fullscreen="true"
 				<h4>Panels</h4>
-				<h4>Display Panel</h4>
-				<a href="#secondPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Overlay</a>
-				<a href="#thirdPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Push</a>
-				<a href="#fourthPanel" class="ui-btn ui-btn-b ui-button-inline ui-shadow">Reveal (default)</a>
 				<h4>Panel Position</h4>
 				data-position=""
 				<ul>
@@ -398,19 +395,6 @@
 			</div>
 			<div data-role="footer">
 				<h2>Just footer</h2>
-			</div>
-			
-			<div data-role="panel" id="secondPanel" data-display="overlay">
-				Here is some panel.
-				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
-			</div>
-			<div data-role="panel" id="thirdPanel" data-display="push">
-				Here is some panel.
-				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
-			</div>
-			<div data-role="panel" id="fourthPanel" data-display="reveal">
-				Here is some panel.
-				<a href="#" class="ui-btn ui-icon-delete ui-notext" data-rel="close">Back</a>
 			</div>
 		</div>
 
@@ -1570,9 +1554,9 @@
 				<h6>data-dismissible=true/false</h6>
 				<i>
 					&lt;div data-role="panel" id="panelID" <b>data-dismissible="false"</b>&gt;<br/>
-						Panel content<br/>
-						In this case remeber to run any oher method allow closing an panel.<br/>
-						&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;Panel content<br/>
+					&ensp;&ensp;&ensp;&ensp;In this case remeber to run any oher method allow closing an panel.<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
 					&lt;/div&gt;<br/>
 				</i>
 				
@@ -1580,9 +1564,9 @@
 				<h6>data-swipe-close=false/true</h6>
 				<i>
 					&lt;div data-role="panel" id="panelID" data-dismissible="false" <b>data-swipe-close="true"</b>&gt;<br/>
-						Panel content<br/>
-						In this case remeber to run any oher method allow closing an panel.<br/>
-						&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;Panel content<br/>
+					&ensp;&ensp;&ensp;&ensp;In this case remeber to run any oher method allow closing an panel.<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;<br/>
 					&lt;/div&gt;<br/>
 				</i>
 				
@@ -1590,9 +1574,9 @@
 				<h6>Close button</h6>
 				<i>
 					&lt;div data-role="panel" id="panelID" data-dismissible="false"&gt;<br/>
-						Panel content<br/>
-						In this case remeber to run any oher method allow closing an panel.<br/>
-						<b>&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;</b><br/>
+					&ensp;&ensp;&ensp;&ensp;Panel content<br/>
+					&ensp;&ensp;&ensp;&ensp;In this case remeber to run any oher method allow closing an panel.<br/>
+					&ensp;&ensp;&ensp;&ensp;<b>&lt;a href="#" data-rel="close" class="ui-btn ui-btn-b"&gt;Close&lt;/a&gt;</b><br/>
 					&lt;/div&gt;<br/>
 				</i>
 				
@@ -1614,6 +1598,61 @@
 			<div data-role="panel" id="examplePanelClosingButton" data-dismissible="false">
 				This content can be only closed by button.
 				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
+			</div>
+			
+		</div>
+		
+		<!-- -------------------------------------------------------------- -->
+		<!-- Here we have page that shows difrent methods to display panels -->
+		<!-- -------------------------------------------------------------- -->
+		<div data-role="page" id="panelsDisplay">
+			<div data-role="header">
+				<h1>Panels Display</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					Panels can be display on three different way: overlay, push, reveal (default).<br/>
+					<h6>Overlay</h6>
+					<i>
+						&lt;div data-role="panel" id="panelID" <b>data-display="overlay"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is overlay panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelDisplayOverlay" class="ui-btn ui-shadow">Overlay</a><br/>
+					<i>
+					<h6>Push</h6>
+						&lt;div data-role="panel" id="panelID" <b>data-display="push"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is push panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelDisplayPush" class="ui-btn ui-shadow">Push</a><br/>
+					<h6>Reveal</h6>
+					<i>
+						&lt;div data-role="panel" id="panelID" <b>data-display="reveal"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is reveal panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelDisplayReveal" class="ui-btn ui-shadow">Reveal</a><br/>
+				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+			
+			<div data-role="panel" id="examplePanelDisplay" data-dismissible="false">
+				
+				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
+			</div>
+			
+			<div data-role="panel" id="examplePanelDisplayOverlay" data-display="overlay">
+				Here is overlay panel.
+			</div>
+			<div data-role="panel" id="examplePanelDisplayPush" data-display="push">
+				Here is push panel.
+			</div>
+			<div data-role="panel" id="examplePanelDisplayReveal" data-display="reveal">
+				Here is reveal panel.
 			</div>
 			
 		</div>
