@@ -86,6 +86,7 @@
 						<li><a href="#panelsGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#panelsClose" data-icon="delete" data-transition="flow">Closing</a></li>
 						<li><a href="#panelsDisplay" data-icon="video" data-transition="flow">Display</a></li>
+						<li><a href="#panelsPositioning" data-icon="location" data-transition="flow">Positioning</a></li>
 					</ul>
 				</div>
 				
@@ -120,18 +121,6 @@
 					<li>fixed</li>
 				</ul>
 				data-fullscreen="true"
-				<h4>Panels</h4>
-				<h4>Panel Position</h4>
-				data-position=""
-				<ul>
-					<li>left</li>
-					<li>right</li>
-				</ul>
-				data-position-fixed=""
-				<ul>
-					<li>true</li>
-					<li>false</li>
-				</ul>
 				<h4>Colapse</h4>
 				<h4>Colapse as Popup</h4>
 				<a href="#collapsePopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-gear ui-btn-icon-notext">gear</a>
@@ -1640,11 +1629,6 @@
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
 			</div>
 			
-			<div data-role="panel" id="examplePanelDisplay" data-dismissible="false">
-				
-				<a href="#" data-rel="close" class="ui-btn ui-btn-b">Close</a>
-			</div>
-			
 			<div data-role="panel" id="examplePanelDisplayOverlay" data-display="overlay">
 				Here is overlay panel.
 			</div>
@@ -1653,6 +1637,68 @@
 			</div>
 			<div data-role="panel" id="examplePanelDisplayReveal" data-display="reveal">
 				Here is reveal panel.
+			</div>
+			
+		</div>
+		
+		<!-- ------------------------------------------------------ -->
+		<!-- Here we have page that shows how to positioning panels -->
+		<!-- ------------------------------------------------------ -->
+		<div data-role="page" id="panelsPositioning">
+			<div data-role="header">
+				<h1>Panels Positioing</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					The panel will be displayed with the position absolute, meaning it will scroll with the page, or fixed o its contents will appear no matter how far down the page you're scrolled.<br/>
+					You can also pick side where panel will reveal.<br/>
+					<h6>data-position="right"</h6>
+					<i>
+						&lt;div data-role="panel" id="panelID" <b>data-position="right</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is right panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelPositionRight" class="ui-btn ui-shadow">Right</a><br/>
+					<i>
+					<h6>data-position="left"</h6>
+					<i>
+						&lt;div data-role="panel" id="panelID" <b>data-position="left"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is left panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelPositionLeft" class="ui-btn ui-shadow">Left</a><br/>
+					<i>
+					<h6>data-position-fixed="true"</h6>
+						&lt;div data-role="panel" id="panelID" <b>data-position-fixed="true"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is fixed panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelPositionFixed" class="ui-btn ui-shadow">Fixed</a><br/>
+					<h6>data-position-fixed="false"</h6>
+					<i>
+						&lt;div data-role="panel" id="panelID" <b>data-position-fixed="false"</b>&gt;<br/>
+						&ensp;&ensp;&ensp;&ensp;Here is not fiexed panel.<br/>
+						&lt;/div&gt;<br/>
+					</i>
+					<a href="#examplePanelPositionNonFixed" class="ui-btn ui-shadow">Not fiexed </a><br/>
+				</p>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+			
+			<div data-role="panel" id="examplePanelPositionRight" data-position="right">
+				Here is right panel.
+			</div>
+			<div data-role="panel" id="examplePanelPositionLeft" data-position="left">
+				Here is left panel.
+			</div>
+			<div data-role="panel" id="examplePanelPositionFixed" data-position-fixed="true">
+				Here is fixed panel.
+			</div>
+			<div data-role="panel" id="examplePanelPositionNonFixed" data-position-fixed="true">
+				Here is not fiexed panel.
 			</div>
 			
 		</div>
