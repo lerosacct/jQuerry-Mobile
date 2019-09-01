@@ -94,7 +94,13 @@
 					<ul>
 						<li><a href="#tableResponsive" data-icon="action" data-transition="flow">Responsive</a></li>
 						<li><a href="#tableColumnToggle" data-icon="check" data-transition="flow">Column Toggle</a></li>
-						<li><a href="#tableStyles" data-icon="camera" data-transition="flow">Styles</a></li>
+						<li><a href="#tableStyles" data-icon="camera" data-transition="flow">Styles</a></li>popupGetStarted
+					</ul>
+				</div>
+				<h3>Popup</h3>
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li><a href="#popupGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 					</ul>
 				</div>
 				
@@ -1813,7 +1819,7 @@
 		<!-- ------------------------------------------ -->
 		<div data-role="page" id="tableStyles">
 			<div data-role="header">
-				<h1>CTables theme</h1>
+				<h1>Tables theme</h1>
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
 			</div>
 			<div data-role="main" class="ui-content">
@@ -1885,6 +1891,35 @@
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- ------------------------------------------ -->
+		<!-- Here we have page showing how to pupups -->
+		<!-- ------------------------------------------ -->
+		<div data-role="page" id="popupGetStarted">
+			<div data-role="header">
+				<h1>Pupup getstarted</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				To create a popup, add the popup attribute to a div with the popup contents. <br/>
+				Also create a link with the href set to the id of the popup div, and add the attribute data-rel="popup".<br/>
+				A popup div has to be nested inside the same page as the link.<br/>
+				<b>You can not have 2 popups same ID in one html doc. (Even on multi Pages)</b></br><br/>
+				<i>
+					&lt;a href="#popupGetStartedFirstPop" data-rel="popup" class="ui-btn"&gt;Basic Popup&lt;/a&gt;<br/>
+					&lt;div data-role="popup" id="firstPopup" class="ui-content"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;p&gt;This is a popup.&lt;/p&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				<a href="#popupGetStartedFirstPop" data-rel="popup" class="ui-btn">Basic Popup</a>
+				<div data-role="popup" id="popupGetStartedFirstPop">
+					<p>This is a popup.</p>
+				</div>
 			</div>
 			<div data-role="footer">
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
