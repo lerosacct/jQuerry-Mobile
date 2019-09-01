@@ -94,7 +94,7 @@
 					<ul>
 						<li><a href="#tableResponsive" data-icon="action" data-transition="flow">Responsive</a></li>
 						<li><a href="#tableColumnToggle" data-icon="check" data-transition="flow">Column Toggle</a></li>
-						<li><a href="#tableStyles" data-icon="camera" data-transition="flow">Styles</a></li>popupGetStarted
+						<li><a href="#tableStyles" data-icon="camera" data-transition="flow">Styles</a></li>
 					</ul>
 				</div>
 				<h3>Popup</h3>
@@ -102,27 +102,11 @@
 					<ul>
 						<li><a href="#popupGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
 						<li><a href="#popupClosing" data-icon="delete" data-transition="flow">Closing</a></li>
+						<li><a href="#popupPosition" data-icon="location" data-transition="flow">Positioning</a></li>
+						<li><a href="#transitionsPageAndDial" data-icon="recycle" data-transition="flow">Transtion</a></li>
 					</ul>
 				</div>
 				
-				<h4>Popups<h4>
-				<a href="#firstPopup" data-rel="popup">BasicPopup</a><br/>
-				<a href="#secondPopup" data-rel="popup">Closed only by button</a>
-				<p id="popupHere">Popap location (data-position-to):</p>
-				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="window">Window</a>
-				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="origin">Origin</a>
-				<a href="#firstPopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popupHere">To pointer</a>
-				<h4>Popup transition</h4>
-				<a href="#firstPopup" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">No transition</a>
-				<a href="#firstPopup" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Pop</a>
-				<a href="#firstPopup" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Fade</a>
-				<a href="#firstPopup" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flip</a>
-				<a href="#firstPopup" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Turn</a>
-				<a href="#firstPopup" data-transition="flow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flow</a>
-				<a href="#firstPopup" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide</a>
-				<a href="#firstPopup" data-transition="slidefade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slidefade</a>
-				<a href="#firstPopup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide up</a>
-				<a href="#firstPopup" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide down</a>
 				<h4>Popup arrow<h4>
 				<a href="#" id="popHere2"class="ui-btn ui-icon-gear ui-btn-icon-notext">here</a>
 				<a href="#arrowPopupLeft" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="#popHere2">Left</a>
@@ -363,6 +347,8 @@
 							<th>Value</th>
 							<th>Dialog</th>
 							<th>Box</th>
+							<th>Popup</th>
+							<th>Popup [Overlay]</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -370,59 +356,92 @@
 							<td>(default)</td>
 							<td><a href="#exapleDialogForTransitions" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>
 							<td>fade</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="fade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>
 							<td>pop</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="pop" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>flip</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="flip" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>turn</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="turn" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>flow</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="flow" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>slidefade</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="slidefade" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>slide</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>slideup</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="slideup" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>slidedown</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="slidedown" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 						<tr>	
 							<td>none</td>
 							<td><a href="#exapleDialogForTransitions" data-rel="dialog" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 							<td><a href="#exaplePageForTransitions" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitions"  data-rel="popup" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
+							<td><a href="#exaplePopUpForTransitionsOverlay"  data-rel="popup" data-transition="none" class="ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-nodisc-icon ui-alt-icon">example</a></td>
 						</tr>
 					</tbody>
 				</table>
+				
+				<div data-role="popup" id="exaplePopUpForTransitions" class="ui-content">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>Popup.</p>
+				</div>
+				
+				<div data-role="popup" id="exaplePopUpForTransitionsOverlay" data-overlay-theme="a" class="ui-content">
+				    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>Popup.</p>
+				</div>
+				
 			</div>
 			<div data-role="footer">
 				<a href="#" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left" data-rel="back">Back to main page</a>
@@ -1932,7 +1951,7 @@
 		<!-- ---------------------------------------------- -->
 		<div data-role="page" id="popupClosing">
 			<div data-role="header">
-				<h1>Pupup getstarted</h1>
+				<h1>Pupup closing</h1>
 				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
 			</div>
 			<div data-role="main" class="ui-content">
@@ -1970,6 +1989,43 @@
 				</div>
 				<div data-role="popup" id="popupUndismissible" class="ui-content" data-dismissible="false">
 					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- ---------------------------------------------- -->
+		<!-- Here we have page showing how to  colse pupups -->
+		<!-- ---------------------------------------------- -->
+		<div data-role="page" id="popupPosition">
+			<div data-role="header">
+				<h1>Pupup positioning</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>
+					Popups can be displayed in 3 different position:<br/>
+					-to the link (origin)<br/>
+					-to the windows (centred)<br/>
+					-to the html object (<i id="popupHere">id</i>)<br/><br/>
+				</p>
+				<i>
+					&lt;a href="#popupPositionExample" class="ui-btn" data-rel="popup" <b>data-position-to="window"</b>&gt;Window&lt;/a&gt;
+				</i><br/>
+				<a href="#popupPositionExample" class="ui-btn" data-rel="popup" data-position-to="window">Window</a><br/>
+				<i>
+					&lt;a href="#popupPositionExample" class="ui-btn" data-rel="popup" <b>data-position-to="origin"</b>&gt;Origin&lt;/a&gt;
+				</i><br/>
+				<a href="#popupPositionExample" class="ui-btn" data-rel="popup" data-position-to="origin">Origin</a><br/>
+				<i>
+					&lt;a href="#popupPositionExample" class="ui-btn" data-rel="popup" <b>data-position-to="#popupHere"</b>&gt;To ID&lt;/a&gt;
+				</i><br/>
+				<a href="#popupPositionExample" class="ui-btn" data-rel="popup" data-position-to="#popupHere">To ID</a>
+				
+				<div data-role="popup" id="popupPositionExample">
 					<p>This is a popup.</p>
 				</div>
 			</div>
