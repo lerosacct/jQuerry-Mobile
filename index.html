@@ -101,6 +101,7 @@
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li><a href="#popupGetStarted" data-icon="info" data-transition="flow">Get started</a></li>
+						<li><a href="#popupClosing" data-icon="delete" data-transition="flow">Closing</a></li>
 					</ul>
 				</div>
 				
@@ -1897,9 +1898,9 @@
 			</div>
 		</div>
 		
-		<!-- ------------------------------------------ -->
+		<!-- --------------------------------------- -->
 		<!-- Here we have page showing how to pupups -->
-		<!-- ------------------------------------------ -->
+		<!-- --------------------------------------- -->
 		<div data-role="page" id="popupGetStarted">
 			<div data-role="header">
 				<h1>Pupup getstarted</h1>
@@ -1911,13 +1912,64 @@
 				A popup div has to be nested inside the same page as the link.<br/>
 				<b>You can not have 2 popups same ID in one html doc. (Even on multi Pages)</b></br><br/>
 				<i>
-					&lt;a href="#popupGetStartedFirstPop" data-rel="popup" class="ui-btn"&gt;Basic Popup&lt;/a&gt;<br/>
-					&lt;div data-role="popup" id="firstPopup" class="ui-content"&gt;<br/>
+					&lt;a href="#popupGetStartedFirstPop" <b>data-rel="popup"</b> class="ui-btn"&gt;Basic Popup&lt;/a&gt;<br/>
+					&lt;div <b>data-role="popup"</b> id="firstPopup" class="ui-content"&gt;<br/>
 					&ensp;&ensp;&ensp;&ensp;&lt;p&gt;This is a popup.&lt;/p&gt;<br/>
 					&lt;/div&gt;<br/>
 				</i>
 				<a href="#popupGetStartedFirstPop" data-rel="popup" class="ui-btn">Basic Popup</a>
 				<div data-role="popup" id="popupGetStartedFirstPop">
+					<p>This is a popup.</p>
+				</div>
+			</div>
+			<div data-role="footer">
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-left">Back to main page</a>
+			</div>
+		</div>
+		
+		<!-- ---------------------------------------------- -->
+		<!-- Here we have page showing how to  colse pupups -->
+		<!-- ---------------------------------------------- -->
+		<div data-role="page" id="popupClosing">
+			<div data-role="header">
+				<h1>Pupup getstarted</h1>
+				<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-notext">back</a>
+			</div>
+			<div data-role="main" class="ui-content">
+				By default popups is closing after clicking out of body of popup.<br/>
+				You can also close popup by button, and dismiss default method.<br/></br>
+				<i>
+					&lt;div data-role="popup" id="popupCloseRight" class="ui-content"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;a href="#" <b>data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"</b>&gt;Close&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;p&gt;This is a popup.&lt;/p&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				<a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Right close button</a></br>
+				<i>
+					&lt;div data-role="popup" id="popupCloseLeft" class="ui-content"&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext <b>ui-btn-left</b>"&gt;Close&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;p&gt;This is a popup.&lt;/p&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				<a href="#popupCloseLeft" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Left close button</a></br>
+				<i>
+					&lt;div data-role="popup" id="popupUndismissible" class="ui-content" <b>data-dismissible="false"</b>&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left"&gt;Close&lt;/a&gt;<br/>
+					&ensp;&ensp;&ensp;&ensp;&lt;p&gt;This is a popup.&lt;/p&gt;<br/>
+					&lt;/div&gt;<br/>
+				</i>
+				<a href="#popupUndismissible" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Undismissible Popup</a></br>
+				
+				<div data-role="popup" id="popupCloseRight" class="ui-content">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="popupCloseLeft" class="ui-content">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+					<p>This is a popup.</p>
+				</div>
+				<div data-role="popup" id="popupUndismissible" class="ui-content" data-dismissible="false">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
 					<p>This is a popup.</p>
 				</div>
 			</div>
